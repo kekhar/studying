@@ -5,8 +5,9 @@ h1, input, button, p {
 h1 {
   color: #333333;
   font-size: 36px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 49.03px;
+  line-height: normal;
 }
 
 body {
@@ -21,14 +22,14 @@ p {
   color: #666666;
   font-size: 18px;
   font-weight: 400;
-  line-height: 24.51px;
+  line-height: normal;
 }
 
 input {
-  color: #F5F5F5;
-  font-weight: 400;
+  color: #999999;
   font-size: 16px;
-  line-height: 21.79px;
+  font-weight: 400;
+  line-height: normal;
 }
 
 a {
@@ -42,5 +43,5 @@ button {
   background-color: #089FE0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24.51px;
+  line-height: normal;
 }
