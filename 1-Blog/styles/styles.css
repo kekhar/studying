@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+}
+
+.v {
+  background: #4B5563;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.myBlog {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header a {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+header input {
+  background: rgba(31, 41, 55, 0.60);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px; 
+}
+
+.creator {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.creator > span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+p {
+  color: #FFF;
+  font-weight: 400;
+}
+
+.firstText {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.secondText {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+p > a {
+  color: #FFF;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
