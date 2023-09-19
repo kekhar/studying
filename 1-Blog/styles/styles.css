@@ -1,20 +1,10 @@
 body {
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  margin: 0;
 }
 
-.v {
-  background: #4B5563;
-  color: #FFF;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.myBlog {
-  color: #FFF;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
+nav ul {
+  list-style: none;
 }
 
 header a {
@@ -33,45 +23,19 @@ header input {
   line-height: normal;
 }
 
-.title {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
-}
-
 h1 {
   color: #FFF;
   font-size: 24px;
   font-weight: 400;
-  line-height: 38px; 
-}
-
-.creator {
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
-.creator > span {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
+  line-height: 38px;
+  width: 460px;
+  height: 30px;
+  margin: 14px 457px 30px 458px;
 }
 
 p {
   color: #FFF;
   font-weight: 400;
-}
-
-.firstText {
-  font-size: 20px;
-  line-height: 32px;
-}
-
-.secondText {
-  font-size: 16px;
-  line-height: 30px;
 }
 
 p > a {
@@ -83,4 +47,71 @@ footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
+  width: 226px;
+  margin: 103px 606px 77px 608px;
+}
+
+.v {
+  background: #4B5563;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  /* Как сделать с вверху отступ? */
+  margin: 80px 11px 73px 180px;
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.myBlog {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 80px 77px 79px 11px;
+}
+
+.firstText {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 45px 365px 25px 367px;
+  width: 708px;
+}
+
+.secondText {
+  font-size: 16px;
+  line-height: 30px;
+  width: 708px;
+  margin: 25px 366px 25px 366px;
+}
+
+.creator {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* Как тут настраивать? */
+}
+
+.creator > span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  box-sizing: content-box;
+  /* Почему съезжает на другую строчку? */
+  margin: 80px 630px 14px 630px;
+}
+
+.image {
+  margin: 28px 272px 24px 272px;
+}
+
+.secondOtstup {
+  margin: 25px 366px 103px 366px;
 }
