@@ -28,9 +28,10 @@ h1 {
   font-size: 24px;
   font-weight: 400;
   line-height: 38px;
-  width: 460px;
-  height: 30px;
-  margin: 14px 457px 30px 458px;
+  width: 525px;
+  height: 76px;
+  text-align: center;
+  margin: 14px auto 30px;
 }
 
 p {
@@ -48,7 +49,7 @@ footer {
   font-weight: 400;
   line-height: 28px;
   width: 226px;
-  margin: 103px 606px 77px 608px;
+  margin: 35px auto 77px;
 }
 
 .v {
@@ -57,10 +58,14 @@ footer {
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
-  /* Как сделать с вверху отступ? */
-  margin: 80px 11px 73px 180px;
-  padding: 6px 12px;
   border-radius: 3px;
+  width: 35px;
+  height: 35px;
+  padding: 6px 12px;
+}
+
+.logo {
+  margin: 72px 11px 80px 180px;
 }
 
 .myBlog {
@@ -68,50 +73,62 @@ footer {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-  margin: 80px 77px 79px 11px;
+  width: 80px;
+  height: 21px;
+  margin: 80px 25px 79px 11px;
 }
 
 .firstText {
   font-size: 20px;
   line-height: 32px;
-  margin: 45px 365px 25px 367px;
   width: 708px;
+  margin: 69px auto 15px;
 }
 
 .secondText {
   font-size: 16px;
   line-height: 30px;
   width: 708px;
-  margin: 25px 366px 25px 366px;
+  margin: 15px auto 10px;
 }
 
 .creator {
-  color: #FFF;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  /* Как тут настраивать? */
+  margin: 30px auto 28px;
+  text-align: center;
 }
 
-.creator > span {
+.name {
+  color: #FFF;
+  margin: 1px auto 1px;
+}
+
+.profession {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
+  margin: 1px auto 1px;
 }
 
 .title {
+  margin: 73px auto 14px;
+  text-align: center;
+}
+
+.title span {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
-  box-sizing: content-box;
-  /* Почему съезжает на другую строчку? */
-  margin: 80px 630px 14px 630px;
+  width: 180px;
+  height: 17px;
 }
 
 .image {
-  margin: 28px 272px 24px 272px;
+  text-align: center;
 }
 
 .secondOtstup {
-  margin: 25px 366px 103px 366px;
+  margin: 15px auto 35px;
 }
