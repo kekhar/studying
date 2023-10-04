@@ -1,5 +1,7 @@
-h1, input, button, p {
-  font-family: 'Open Sans';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -11,11 +13,15 @@ h1 {
 }
 
 body {
-  background-color: #F39494;
+  background: linear-gradient(243deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0.00) 100%), linear-gradient(243deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0.00) 82.03%), #F39494;
 }
 
 main {
   background-color: #FFFEFE;
+  border-radius: 10px;
+  margin: 190px auto;
+  width: 35%;
+  height: 573px;
 }
 
 p {
@@ -30,6 +36,8 @@ input {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+  border: none;
+  border-radius: 5px;
 }
 
 a {
@@ -44,4 +52,86 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
+  padding: 9px 102px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px auto;
+}
+
+
+.textHero {
+  display: flex;
+  flex-direction: column;
+  /* Вопрос как сделать с вверху? */
+  margin: 72px auto;
+  align-items: center;
+}
+
+/* Как сделать чтоб работало вместе и одного же размера? */
+.company {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+/* Как лучше сделать эт строчку? */
+.company_2 {
+  border-top: 5px solid #F5F5F5;
+  border-bottom: 5px solid #F5F5F5;
+  border-left: 1px solid #F5F5F5;
+  border-right: 5px #089FE0;
+}
+
+.company_3 {
+  border-top: 5px solid #F5F5F5;
+  border-bottom: 5px solid #F5F5F5;
+  border-left: 0;
+  border-right: 1px solid #F5F5F5;
+}
+
+.company input {
+  border-radius: 5px;
+  width: 250px;
+  background: #FFF;
+}
+
+.name {
+  font-weight: 400;
+  line-height: normal;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+/* Как сделать чтоб сделать как будто в одном в виде? */
+.name input {
+  background: #F5F5F5;
+  border-radius: 5px;
+  color: #999;
+  border-right: 0;
+  margin-right: 2px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.email input {
+  border-radius: 5px;
+  background: #F5F5F5;
+  color: #999;
+  width: 385px;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
 }

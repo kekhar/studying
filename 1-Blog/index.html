@@ -3,34 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Блог</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Блог</title>
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <a href="/">
-          <span class="v">В</span>
-          <span class="myBlog">Мой блог</span>
-        </a>
+      <div class="conteyner">
+        <div class="logo">
+          <a href="/">
+            <span class="v">В</span>
+            <span class="myBlog">Мой блог</span>
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">HTML и CSS</a>
+            </li>
+            <li>
+              <a href="#">Frontend</a>
+            </li>
+            <li>
+              <a href="#">Backend</a>
+            </li>
+            <li>
+              <img src="./images/search.svg" alt="лупа для поиска" />
+              <input type="search" placeholder="Поиск" />
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">HTML и CSS</a>
-          </li>
-          <li>
-            <a href="#">Frontend</a>
-          </li>
-          <li>
-            <a href="#">Backend</a>
-          </li>
-          <li>
-            <input type="search" placeholder="Поиск" />
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section>
@@ -44,8 +53,9 @@
             alt="Лицо Натальи Васильевной"
             class="face"
           />
-          <span class="name">Наталья Васильевна</span> <br />
-          <span class="profession">Разработчик</span>
+          <div class="creator name">Наталья Васильевна</div>
+          <br />
+          <div class="creator profession">Разработчик</div>
         </div>
       </section>
 
