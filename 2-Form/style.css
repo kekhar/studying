@@ -66,24 +66,19 @@ button {
 .textHero {
   display: flex;
   flex-direction: column;
-  /* Вопрос как сделать с вверху? */
-  margin: 72px auto;
+  padding: 60px;
   align-items: center;
+  margin-bottom: 25px;
 }
 
-/* Как сделать чтоб работало вместе и одного же размера? */
 .company {
-  margin-top: 56px;
   display: flex;
   justify-content: center;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
-/* Как лучше сделать эт строчку? */
 .company_2 {
-  border-top: 5px solid #F5F5F5;
-  border-bottom: 5px solid #F5F5F5;
-  border-left: 1px solid #F5F5F5;
+  border: 5px solid #F5F5F5;
   border-right: 5px #089FE0;
 }
 
@@ -101,15 +96,13 @@ button {
 }
 
 .name {
-  font-weight: 400;
-  line-height: normal;
-  font-size: 16px;
   display: flex;
   justify-content: center;
+  gap: 1px;
+  margin: 0 auto;
   margin-bottom: 22px;
 }
 
-/* Как сделать чтоб сделать как будто в одном в виде? */
 .name input {
   background: #F5F5F5;
   border-radius: 5px;
@@ -134,4 +127,5 @@ button {
 .end {
   display: flex;
   justify-content: center;
+  gap: 4px;
 }

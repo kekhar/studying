@@ -15,30 +15,28 @@
 
   <body>
     <header>
-      <div class="conteyner">
-        <div class="logo">
-          <a href="/">
-            <span class="v">В</span>
-            <span class="myBlog">Мой блог</span>
-          </a>
-        </div>
+      <div class="header">
+        <a class="header__logo" href="#">
+          <span class="v">В</span>
+          <span class="myBlog">Мой блог</span>
+        </a>
         <nav>
-          <ul>
-            <li>
+          <ul class="menu">
+            <li class="menu__item">
               <a href="#">HTML и CSS</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#">Frontend</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#">Backend</a>
-            </li>
-            <li>
-              <img src="./images/search.svg" alt="лупа для поиска" />
-              <input type="search" placeholder="Поиск" />
             </li>
           </ul>
         </nav>
+        <div class="search">
+          <img src="./images/search.svg" alt="иконка поиска" />
+          <input type="search" class="search_search" placeholder="Поиск" />
+        </div>
       </div>
     </header>
     <main>
@@ -51,11 +49,10 @@
           <img
             src="./images/image_2.png"
             alt="Лицо Натальи Васильевной"
-            class="face"
+            class="hero__left"
           />
-          <div class="creator name">Наталья Васильевна</div>
-          <br />
-          <div class="creator profession">Разработчик</div>
+          <div class="name">Наталья Васильевна</div>
+          <div class="profession">Разработчик</div>
         </div>
       </section>
 
