@@ -45,7 +45,6 @@ a {
 }
 
 header input {
-  /* Иконку вставлять через позицию ведь же как я понял? */
   background: rgba(31, 41, 55, 0.60);
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -118,14 +117,18 @@ footer {
 }
 
 .creator {
-  /* Хотелось узнать решение проблемы с Наталья Васильевна. Показывает, что она знаимает много место, хотя я ей не указывал сколько ей место, и делал меньше и все ровно не менялось. как исправить? */
   display: flex;
   gap: 0 16px;
   justify-content: center;
-  width: 240px;
-  margin: 0 auto;
+  width: 100%;
   flex-wrap: wrap;
   padding: 8px;
+  margin-bottom: 28px;
+}
+
+.creator__items {
+  max-width: 326px;
+  flex-direction: column;
 }
 
 .name {
@@ -160,4 +163,14 @@ footer {
 
 .secondOtstup {
   margin: 15px auto 35px;
+}
+
+.search {
+  position: relative;
+}
+
+.search__icon {
+  position: absolute;
+  left: 7%;
+  top: 24%;
 }
