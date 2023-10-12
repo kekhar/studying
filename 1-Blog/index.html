@@ -3,34 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Блог</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Блог</title>
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <a href="/">
+      <div class="header">
+        <a class="header__logo" href="#">
           <span class="v">В</span>
           <span class="myBlog">Мой блог</span>
         </a>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#">HTML и CSS</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Frontend</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Backend</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="search">
+          <div class="search__icon">
+            <img src="./images/search.svg" alt="иконка поиска" />
+          </div>
+          <input type="search" class="search_search" placeholder="Поиск" />
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">HTML и CSS</a>
-          </li>
-          <li>
-            <a href="#">Frontend</a>
-          </li>
-          <li>
-            <a href="#">Backend</a>
-          </li>
-          <li>
-            <input type="search" placeholder="Поиск" />
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section>
@@ -42,10 +51,12 @@
           <img
             src="./images/image_2.png"
             alt="Лицо Натальи Васильевной"
-            class="face"
+            class="hero__left"
           />
-          <span class="name">Наталья Васильевна</span> <br />
-          <span class="profession">Разработчик</span>
+          <div class="creator__items">
+            <div class="name">Наталья Васильевна</div>
+            <div class="profession">Разработчик</div>
+          </div>
         </div>
       </section>
 

@@ -1,17 +1,46 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
   margin: 0;
+  width: 100%;
 }
 
-nav ul {
+.header {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  padding: 77px;
+  gap: 11px;
+}
+
+.header__logo {
+  display: flex;
+  gap: 11px;
+}
+
+.menu {
   list-style: none;
+  display: flex;
+  gap: 52px;
+  margin: 0;
 }
 
-header a {
+.menu__item {
+  padding: 10px;
+}
+
+.menu__item a {
   color: #FFF;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -21,6 +50,9 @@ header input {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+  border-radius: 100px;
+  border: none;
+  padding: 9px 49px;
 }
 
 h1 {
@@ -29,9 +61,9 @@ h1 {
   font-weight: 400;
   line-height: 38px;
   width: 525px;
-  height: 76px;
   text-align: center;
-  margin: 14px auto 30px;
+  margin: 14px auto;
+  margin-bottom: 30px;
 }
 
 p {
@@ -39,7 +71,7 @@ p {
   font-weight: 400;
 }
 
-p > a {
+p>a {
   color: #FFF;
 }
 
@@ -59,13 +91,7 @@ footer {
   font-weight: 600;
   line-height: normal;
   border-radius: 3px;
-  width: 35px;
-  height: 35px;
   padding: 6px 12px;
-}
-
-.logo {
-  margin: 72px 11px 80px 180px;
 }
 
 .myBlog {
@@ -73,9 +99,7 @@ footer {
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-  width: 80px;
-  height: 21px;
-  margin: 80px 25px 79px 11px;
+  padding: 5px;
 }
 
 .firstText {
@@ -93,26 +117,35 @@ footer {
 }
 
 .creator {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  margin: 30px auto 28px;
-  text-align: center;
+  display: flex;
+  gap: 0 16px;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin-bottom: 28px;
+}
+
+.creator__items {
+  max-width: 326px;
+  flex-direction: column;
 }
 
 .name {
   color: #FFF;
-  margin: 1px auto 1px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .profession {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  margin: 1px auto 1px;
 }
 
 .title {
-  margin: 73px auto 14px;
+  margin-top: 73px;
   text-align: center;
 }
 
@@ -122,7 +155,6 @@ footer {
   font-weight: 400;
   line-height: normal;
   width: 180px;
-  height: 17px;
 }
 
 .image {
@@ -131,4 +163,14 @@ footer {
 
 .secondOtstup {
   margin: 15px auto 35px;
+}
+
+.search {
+  position: relative;
+}
+
+.search__icon {
+  position: absolute;
+  left: 7%;
+  top: 24%;
 }
