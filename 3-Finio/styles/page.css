@@ -1,0 +1,66 @@
+.section__wrapper {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+}
+
+.rates__header-h1 {
+    color: var(--color-head);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.rates__header {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.rates__header-text {
+    color: var(--color-for-rates);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+
+.rates_wrappper {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: [start] 1fr [str-center] 1fr [end-center] 1fr [end];
+    gap: 24px;
+}
+
+@media (max-width: 1200px) {
+
+    .rates_wrappper {
+        grid-template-columns: [start] repeat(2, auto) [end];
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .rates_wrappper {
+        grid-template-columns: [start] auto [end];
+        justify-content: center;
+    }
+
+    .rates__header {
+        text-align: start;
+        padding: 24px;
+    }
+
+    .rates__header-text {
+        font-size: 17px
+    }
+
+    .rates__header-h1 {
+        text-align: start;
+    }
+}
+
+@media (max-width: 410px) {
+    .rate-card {}
+}

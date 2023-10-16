@@ -1,0 +1,37 @@
+:root {
+    --color-main: #fff;
+    --color-primary: #357EFE;
+    --color-head: #000;
+    --color-for-rates: rgba(78, 93, 124, 0.50);
+    --color-for-rates-line: rgba(78, 93, 124, 0.08);
+    --color-percent: #1ABC9C;
+    --color-bg-profitably: #FFC736;
+    --color-for-rates-text: #4E5D7C;
+    --color-for-title-3: rgba(255, 255, 255, 0.60);
+    --color-for-rates-line2: rgba(255, 255, 255, 0.16);
+
+    --border-47: 47px;
+    --border-8: 8px;
+    --layout-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background: var(--color-bg-main);
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-style: normal;
+}
+
+/* a {
+    text-decoration: none;
+} */
