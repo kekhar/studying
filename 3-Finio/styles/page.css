@@ -5,6 +5,7 @@
     border-radius: var(--border-16);
     display: flex;
     gap: 74px;
+    width: 1392px;
 }
 
 .reviews__wrapper {

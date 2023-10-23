@@ -31,9 +31,17 @@
     background-color: var(--color-primary);
 }
 
+.button_dark:hover {
+    background-color: var(--color-hover-primary);
+}
+
 .button_primary {
     background-color: var(--color-main);
     color: var(--color-primary);
+}
+
+.button_primary:hover {
+    background-color: var(--color-button-pri-link);
 }
 
 /* three_points */
