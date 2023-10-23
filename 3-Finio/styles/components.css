@@ -1,6 +1,12 @@
 /* section */
 .section {
-    background-color: var(--color-main);
+    background: var(--color-main);
+    max-width: var(--layout-width);
+    margin: 0 auto;
+}
+
+.section_primary {
+    background-color: var(--color-primary);
 }
 
 /* Buttons */
@@ -29,6 +35,242 @@
     background-color: var(--color-main);
     color: var(--color-primary);
 }
+
+/* three_points */
+.three_points-text {
+    color: var(--color-head);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    width: 328px;
+}
+
+.three__points {
+    display: flex;
+    gap: 64px;
+    padding: 83px 0;
+    border-bottom: 1px solid var(--color-line);
+    justify-content: center;
+}
+
+.three__points_point {
+    display: flex;
+    gap: 16px;
+}
+
+/* hero */
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.hero__contayner {
+    padding: 63px 0 0;
+}
+
+.hero__contayner-2 {
+    padding: 80px 0 0;
+}
+
+.hero__contayner-3 {
+    padding: 45px 0;
+}
+
+.hero__left {
+    padding: 103px 0;
+}
+
+.hero__left-2 {
+    padding: 35px 0 207px;
+}
+
+.hero__right img {
+    margin-bottom: 38px;
+}
+
+.hero__right-2 {
+    margin-bottom: 80px;
+}
+
+.hero__right-2-relarive {
+    position: relative;
+}
+
+.hero__right_2-vector {
+    position: absolute;
+    width: 94px;
+    height: 47px;
+    top: 79px;
+    right: 118px;
+}
+
+.hero__right-2-img {
+    margin-bottom: 80px;
+    width: 620px;
+    height: 526px;
+}
+
+.hero__right-3 img {
+    margin-bottom: 40px;
+}
+
+.hero__value {
+    top: 182px;
+    left: 157px;
+    background-color: var(--color-main);
+    border-radius: var(--border-16);
+    position: absolute;
+    padding: 26px 38px;
+    display: flex;
+    gap: 41px;
+}
+
+.table-value {
+    color: var(--color-text-2);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 140%;
+}
+
+/* time section */
+.time__button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.time__button button {
+    width: 345px;
+    padding: 12px 32px;
+}
+
+.time__image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 64px;
+}
+
+.time__image-strelki {
+    position: absolute;
+    top: 44%;
+    left: 944px;
+}
+
+.time__column {
+    color: var(--color-main);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%
+}
+
+.time__menu-column {
+    color: var(--color-for-menu-item);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.column-1 {
+    padding: 12px 0;
+    list-style: url(../images/logo/exclamation-circle.svg);
+}
+
+.column-2 {
+    padding: 12px 0;
+    list-style: url(../images/logo/check-circle.svg);
+}
+
+/* three__points-2 */
+.three__point-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.three__point-2 img {
+    width: 80px;
+    height: 80px;
+}
+
+/* mobile section */
+.mobile__conteyner {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.mobile__pc {
+    padding: 30px 240px 0;
+}
+
+.mobile__mobile {
+    position: absolute;
+    bottom: 0px;
+    left: 60px;
+}
+
+/* support */
+.support__social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.support-social {
+    display: flex;
+    gap: 16px;
+    color: var(--color-main);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+/* reviews */
+.reviwes__left {
+    color: var(--color-main);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 24px 110px 104px;
+    gap: 87px;
+    position: relative;
+}
+
+.reviwes__right {
+    position: relative;
+}
+
+.reviews__strelka-left {
+    position: absolute;
+    top: 201px;
+    left: 0;
+}
+
+.reviews__strelka-right {
+    position: absolute;
+    top: 201px;
+    right: 0;
+    cursor: pointer;
+}
+
+.reviwes__right img {
+    border-radius: 0 var(--border-16) var(--border-16) 0;
+}
+
+.reviews__text {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0;
+}
+
+.reviews__text-1 {
+    font-weight: 700;
+}
+
 
 /* rate-card */
 .rate-card {
@@ -100,13 +342,13 @@
 }
 
 .rate-card-border {
-    border-top: 1px solid var(--color-for-rates-line);
-    border-bottom: 1px solid var(--color-for-rates-line);
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
 }
 
 .rate-card-border-2 {
-    border-top: 1px solid var(--color-for-rates-line2);
-    border-bottom: 1px solid var(--color-for-rates-line2);
+    border-top: 1px solid var(--color-line-2);
+    border-bottom: 1px solid var(--color-line-2);
 }
 
 .rate-card_cost,
