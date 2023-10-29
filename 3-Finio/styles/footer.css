@@ -3,8 +3,8 @@
 }
 
 .footer__wrapper {
-    max-width: var(--layout-width);
     margin: 0 auto;
+    width: 80%;
 }
 
 .footer_head {
@@ -24,8 +24,8 @@
 .footer__end {
     padding: 38px 0;
     display: flex;
-    gap: 837px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .footer__payment {
@@ -58,4 +58,16 @@
 
 .menu-small__item {
     padding: 5px 0;
+}
+
+@media (max-width: 1100px) {
+    .footer__menu {
+        flex-direction: column;
+    }
+
+    .footer__end {
+        flex-direction: column-reverse;
+        gap: 24px;
+        align-items: start;
+    }
 }

@@ -1,5 +1,12 @@
 .header__wrapper {
-    padding: 40px 50px;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 80%;
+}
+
+.header_wrapper {
+    margin: 0 auto;
+    width: 80%;
 }
 
 .headling__wrapper {
@@ -19,7 +26,7 @@
 
 .header__login button {
     padding: 12px 32px;
-    width: 207px;
+    width: 100%;
 }
 
 .header__login button:hover {
@@ -70,19 +77,32 @@
     color: var(--color-main);
 }
 
-.header__mobile-menu-button {
+.header__mobile {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-/* @media (max-width: 960px) {
-    .menu {
+@media (max-width: 1200px) {
+    .header-notebook {
         display: none;
     }
 
-    .header__mobile-menu-button {
-        display: block;
+    .headling_header {
+        justify-content: center;
     }
-} */
+
+    .header__left {
+        margin-bottom: 109px;
+    }
+
+    .header__mobile {
+        display: flex;
+    }
+
+    .menu,
+    .header__login {
+        display: none;
+    }
+}

@@ -1,8 +1,6 @@
 /* section */
 .section {
     background: var(--color-main);
-    max-width: var(--layout-width);
-    margin: 0 auto;
 }
 
 .section_primary {
@@ -17,14 +15,13 @@
     color: var(--color-main);
     border-radius: var(--border-47);
     cursor: pointer;
-    /* Влазит только на 15px, а на 17px(как в Фигме) нет */
     font-size: 15px;
     font-weight: 800;
     display: inline-block;
     justify-content: center;
     align-items: center;
     height: 48px;
-    width: 289px;
+    width: 100%;
 }
 
 .button_dark {
@@ -54,9 +51,10 @@
 }
 
 .three__points {
+    margin-top: 83px;
     display: flex;
     gap: 64px;
-    padding: 83px 0;
+    padding: 0 0 83px;
     border-bottom: 1px solid var(--color-line);
     justify-content: center;
 }
@@ -103,20 +101,19 @@
 
 .hero__right-2-relarive {
     position: relative;
+    padding: 0 60px 0 0;
+    margin-bottom: 120px;
 }
 
 .hero__right_2-vector {
     position: absolute;
-    width: 94px;
-    height: 47px;
-    top: 79px;
-    right: 118px;
+    top: 50%;
+    right: 30%;
 }
 
 .hero__right-2-img {
-    margin-bottom: 80px;
-    width: 620px;
-    height: 526px;
+    width: 100%;
+    height: 100%;
 }
 
 .hero__right-3 img {
@@ -124,14 +121,14 @@
 }
 
 .hero__value {
-    top: 182px;
-    left: 157px;
+    top: 35%;
+    right: 1%;
     background-color: var(--color-main);
     border-radius: var(--border-16);
     position: absolute;
     padding: 26px 38px;
     display: flex;
-    gap: 41px;
+    gap: 30px;
 }
 
 .table-value {
@@ -158,12 +155,14 @@
     position: relative;
     justify-content: center;
     padding: 64px;
+    height: 100%;
+    width: 100%;
 }
 
 .time__image-strelki {
     position: absolute;
     top: 44%;
-    left: 944px;
+    left: 48%;
 }
 
 .time__column {
@@ -198,24 +197,24 @@
 }
 
 .three__point-2 img {
-    width: 80px;
-    height: 80px;
+    width: 10%;
 }
 
 /* mobile section */
 .mobile__conteyner {
     position: relative;
-    margin-bottom: 120px;
+    margin: 0 auto 120px;
+    text-align: center;
 }
 
 .mobile__pc {
-    padding: 30px 240px 0;
+    padding: 30px 0;
 }
 
 .mobile__mobile {
     position: absolute;
-    bottom: 0px;
-    left: 60px;
+    bottom: 0;
+    left: 6%;
 }
 
 /* support */
@@ -237,15 +236,18 @@
 
 /* reviews */
 .reviwes__left {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 24px 110px 104px;
+    position: relative;
+    width: 450px;
+}
+
+.reviews__header {
     color: var(--color-main);
     font-size: 28px;
     font-weight: 700;
     line-height: 140%;
-    display: flex;
-    flex-direction: column;
-    padding: 120px 24px 110px 104px;
-    gap: 87px;
-    position: relative;
 }
 
 .reviwes__right {
@@ -265,29 +267,55 @@
     cursor: pointer;
 }
 
-.reviwes__right img {
-    border-radius: 0 var(--border-16) var(--border-16) 0;
-}
-
 .reviews__text {
     font-size: 17px;
     font-weight: 500;
     padding: 0;
+    color: var(--color-main);
+}
+
+.reviews__text_2 {
+    margin-top: 20px;
 }
 
 .reviews__text-1 {
+    margin-top: 20px;
     font-weight: 700;
+    color: var(--color-main);
 }
 
+.reviews__text_2 {
+    padding: 24px 20px;
+    text-align: start;
+}
+
+.reviews__text-2 {
+    color: var(--color-main);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.prodovec-woman {
+    border-radius: var(--border-16) var(--border-16) var(--border-16) var(--border-16);
+    width: 100%;
+    height: 100%;
+}
+
+.reviews__wrapper-2 img {
+    width: 100%;
+    height: 100%
+}
 
 /* rate-card */
 .rate-card {
-    padding: 0 40px;
-    width: 369px;
-    filter: drop-shadow(0px 0px 32px rgba(78, 93, 124, 0.16));
+    box-shadow: 0px 0px 32px rgba(78, 93, 124, 0.16);
     border-radius: var(--border-8);
 }
 
+.rate__wrapper-card {
+    padding: 0px 40px;
+}
 
 .rate-card-primary {
     background-color: var(--color-primary);
@@ -300,10 +328,6 @@
 
 .rate-card__headling-2 {
     margin-top: 48px;
-}
-
-.rate-card__headling-3 {
-    margin-bottom: -24px;
 }
 
 .rate-card_month {
@@ -385,7 +409,7 @@
     padding: 4px 16px;
     background-color: var(--color-percent);
     border-radius: var(--border-8);
-    width: 124px;
+    width: 40%;
 }
 
 .card_price-profitably {
@@ -404,6 +428,7 @@
 
 .rate-card__footer {
     margin-bottom: 48px;
+    text-align: center;
 }
 
 /* Gap для card-money */

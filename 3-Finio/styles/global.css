@@ -22,7 +22,7 @@
     --border-34: 34px;
     --border-16: 16px;
     --border-8: 8px;
-    --layout-width: 1400px;
+    --layout-width: 1920px;
 }
 
 * {
@@ -36,10 +36,11 @@ html {
 }
 
 body {
-    background: var(--color-main);
+    /* background: var(--color-main); */
     margin: 0;
     font-family: "Fira Sans", sans-serif;
     font-style: normal;
+    width: 100%;
 }
 
 a {
