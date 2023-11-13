@@ -7,6 +7,11 @@
     background-color: var(--color-primary);
 }
 
+.section__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 /* Buttons */
 .button {
     padding: 12px 63px;
@@ -26,6 +31,7 @@
 
 .button_dark {
     background-color: var(--color-primary);
+    padding: 0 61px;
 }
 
 .button_dark:hover {
@@ -35,6 +41,7 @@
 .button_primary {
     background-color: var(--color-main);
     color: var(--color-primary);
+    padding: 0 61px;
 }
 
 .button_primary:hover {
@@ -64,10 +71,15 @@
     gap: 16px;
 }
 
+.three_point__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 /* hero */
 .hero {
     display: flex;
-    justify-content: space-evenly;
+    gap: 64px;
     border-bottom: 1px solid var(--color-line);
 }
 
@@ -240,7 +252,7 @@
     flex-direction: column;
     padding: 120px 24px 110px 104px;
     position: relative;
-    width: 450px;
+    width: 1437px;
 }
 
 .reviews__header {
@@ -250,19 +262,23 @@
     line-height: 140%;
 }
 
+.reviews__header-text {
+    width: 430px;
+}
+
 .reviwes__right {
     position: relative;
 }
 
 .reviews__strelka-left {
     position: absolute;
-    top: 201px;
+    top: 38%;
     left: 0;
 }
 
 .reviews__strelka-right {
     position: absolute;
-    top: 201px;
+    top: 38%;
     right: 0;
     cursor: pointer;
 }
@@ -298,7 +314,7 @@
 
 .prodovec-woman {
     border-radius: var(--border-16) var(--border-16) var(--border-16) var(--border-16);
-    width: 100%;
+    width: 584px;
     height: 100%;
 }
 
@@ -351,7 +367,7 @@
     font-size: 17px;
     font-weight: 500;
     line-height: 140%;
-    margin-bottom: 34px;
+    margin-bottom: 11px;
 }
 
 .rate-card_title-2 {
@@ -409,7 +425,7 @@
     padding: 4px 16px;
     background-color: var(--color-percent);
     border-radius: var(--border-8);
-    width: 40%;
+    width: 43%;
 }
 
 .card_price-profitably {

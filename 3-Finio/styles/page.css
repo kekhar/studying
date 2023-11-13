@@ -1,12 +1,10 @@
 /* wrapper */
 .support__wrapper {
-    margin: 0 auto;
     background-color: var(--color-primary);
     padding: 0 95px;
     border-radius: var(--border-16);
     display: flex;
     gap: 74px;
-    width: 80%;
 }
 
 .reviews__wrapper {
@@ -32,6 +30,12 @@
 .mobile_version__wrapper {
     margin: 0 auto;
     width: 80%;
+}
+
+.rates__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .reviews__wrapper-2 {
@@ -169,7 +173,7 @@
 .rates_wrappper {
     padding: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max(365px));
     gap: 24px;
     align-items: center;
     justify-content: center;
@@ -186,12 +190,8 @@
 
 /* all media */
 @media (max-width: 1740px) {
-    .rates_wrappper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .rate-card_profit {
-        width: 28%;
+        width: 43%;
     }
 
     .header__right {
@@ -251,7 +251,7 @@
     }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1280px) {
     .time__image {
         justify-content: center;
         padding: 0 24px;
@@ -259,15 +259,15 @@
     }
 
     .headling_h2 {
-        text-align: start;
+        text-align: center;
     }
 
     .hero__text-5 {
-        text-align: start;
+        text-align: center;
     }
 
     .time__button {
-        justify-content: start;
+        justify-content: center;
         padding: 32px 24px;
     }
 
@@ -276,5 +276,31 @@
         margin-top: 54px;
         gap: 48px;
         align-items: center;
+    }
+
+    .rates_wrappper {
+        grid-template-columns: repeat(2, max(365px));
+    }
+}
+
+@media (max-width: 930px) {
+    .rates_wrappper {
+        grid-template-columns: max(365px);
+    }
+
+    .hero__text-5 {
+        text-align: left;
+        width: 328px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    .headling_h2 {
+        text-align: left;
+        margin: 0 auto 24px;
+        justify-content: center;
+        width: 328px;
     }
 }
