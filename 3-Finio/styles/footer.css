@@ -46,6 +46,7 @@
     font-size: 17px;
     font-weight: 500;
     line-height: 140%;
+    padding: 0;
 }
 
 .menu-small a {
@@ -63,6 +64,7 @@
 @media (max-width: 1100px) {
     .footer__menu {
         flex-direction: column;
+        gap: 48px;
     }
 
     .footer__end {

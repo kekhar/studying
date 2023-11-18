@@ -207,6 +207,8 @@
         text-align: center;
     }
 
+
+
     .support__right {
         align-self: center;
     }
@@ -251,12 +253,13 @@
     }
 }
 
-@media (max-width: 1280px) {
-    .time__image {
-        justify-content: center;
-        padding: 0 24px;
-        overflow: auto;
+@media (max-width: 1200px) {
+    .section_gradient {
+        background: linear-gradient(-7.003deg, var(--color-main) 17%, var(--color-primary) 18%);
     }
+}
+
+@media (max-width: 1280px) {
 
     .headling_h2 {
         text-align: center;

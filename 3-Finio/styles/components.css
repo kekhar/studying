@@ -3,6 +3,10 @@
     background: var(--color-main);
 }
 
+.section_gradient {
+    background: linear-gradient(-7.003deg, var(--color-main) 34%, var(--color-primary) 35%);
+}
+
 .section_primary {
     background-color: var(--color-primary);
 }
@@ -166,16 +170,25 @@
     display: flex;
     position: relative;
     justify-content: center;
-    padding: 64px;
-    height: 100%;
-    width: 100%;
+    margin: 64px auto;
+    min-width: 500px;
+    overflow: hidden;
 }
 
 .time__image-strelki {
     position: absolute;
     top: 44%;
-    left: 48%;
+    left: 47%;
+    z-index: 1;
 }
+
+.time__image img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
 
 .time__column {
     color: var(--color-main);

@@ -35,6 +35,10 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+main {
+    overflow: hidden;
+}
+
 body {
     /* background: var(--color-main); */
     margin: 0;
