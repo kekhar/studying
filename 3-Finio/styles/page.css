@@ -1,0 +1,309 @@
+/* wrapper */
+.support__wrapper {
+    background-color: var(--color-primary);
+    padding: 0 95px;
+    border-radius: var(--border-16);
+    display: flex;
+    gap: 74px;
+}
+
+.reviews__wrapper {
+    display: flex;
+    background-color: var(--color-primary);
+    border-radius: var(--border-16);
+    margin: 0 auto 80px;
+    width: 60%;
+    height: 438px;
+    justify-content: space-between;
+}
+
+.rate__wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.three_point__wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.mobile_version__wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.rates__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reviews__wrapper-2 {
+    display: none;
+    background-color: var(--color-primary);
+    border-radius: var(--border-16);
+    width: 328px;
+    align-items: center;
+    margin: 0 auto 64px;
+    height: 609px;
+}
+
+/* headling */
+.headling_h {
+    color: var(--color-head);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+}
+
+.headling_h2 {
+    color: var(--color-main);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.header-h1 {
+    color: var(--color-main);
+    font-weight: 8f00;
+    margin: 126px 0 0 0;
+    width: 515px;
+}
+
+.headrer__support {
+    color: var(--color-main);
+    margin-top: 80px;
+    margin-bottom: 14px;
+}
+
+/* hero */
+.hero__1 {
+    width: 510px;
+    margin-bottom: 25px;
+}
+
+.hero__2 {
+    width: 571px;
+    margin-bottom: 25px;
+}
+
+.hero__3 {
+    margin-bottom: 30px;
+    width: 526px;
+}
+
+.hero__text {
+    color: var(--color-for-rates);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    width: 482px;
+}
+
+.hero__text-2 {
+    width: 565px;
+}
+
+.hero__text-3 {
+    width: 526px;
+}
+
+.hero__text-5 {
+    width: 1156px;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--color-for-menu-item);
+}
+
+/* time */
+.time {
+    padding: 120px 0;
+}
+
+.time__end {
+    display: flex;
+    gap: 71px;
+    justify-content: center;
+}
+
+/* three__point-2 */
+.three__points-2 {
+    padding: 120px 0 80px;
+    border-bottom: 1px solid var(--color-line);
+    display: flex;
+    gap: 78px;
+}
+
+.header_three__point-2 {
+    font-size: 32px;
+}
+
+.three__point-2-text {
+    width: 367px;
+    font-size: 17px;
+}
+
+/* rates */
+.rates__header-h1 {
+    color: var(--color-head);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.rates__header {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.rates__header-text {
+    color: var(--color-for-rates);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.rates_wrappper {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, max(365px));
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* support */
+.headrer__support__text {
+    width: 411px;
+    color: var(--color-for-menu-item);
+    margin-bottom: 40px;
+    text-align: start;
+}
+
+
+/* all media */
+@media (max-width: 1740px) {
+    .rate-card_profit {
+        width: 43%;
+    }
+
+    .header__right {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1490px) {
+    .support__wrapper {
+        flex-direction: column-reverse;
+        padding: 30px;
+        gap: 10px;
+        text-align: center;
+    }
+
+
+
+    .support__right {
+        align-self: center;
+    }
+
+    .reviews__wrapper {
+        flex-direction: column-reverse;
+        width: 20%;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .mobile__conteyner {
+        overflow: hidden;
+    }
+
+    .three__points {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .three__points-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero__reverse {
+        flex-direction: column;
+    }
+
+    .reviews__wrapper {
+        display: none;
+    }
+
+    .reviews__wrapper-2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section_gradient {
+        background: linear-gradient(-7.003deg, var(--color-main) 17%, var(--color-primary) 18%);
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .headling_h2 {
+        text-align: center;
+    }
+
+    .hero__text-5 {
+        text-align: center;
+    }
+
+    .time__button {
+        justify-content: center;
+        padding: 32px 24px;
+    }
+
+    .time__end {
+        flex-direction: column;
+        margin-top: 54px;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .rates_wrappper {
+        grid-template-columns: repeat(2, max(365px));
+    }
+}
+
+@media (max-width: 930px) {
+    .rates_wrappper {
+        grid-template-columns: max(365px);
+    }
+
+    .hero__text-5 {
+        text-align: left;
+        width: 328px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    .headling_h2 {
+        text-align: left;
+        margin: 0 auto 24px;
+        justify-content: center;
+        width: 328px;
+    }
+}
