@@ -29,4 +29,6 @@ switch (browserLang) {
     case 'ka':
         console.log('გამარჯობა');
         break;
+    default:
+        console.log('Вы не выбрали язык!');
 }

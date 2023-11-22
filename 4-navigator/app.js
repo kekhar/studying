@@ -4,9 +4,18 @@ const addressLong = 20;
 const positionLat = 15;
 const positionLong = 25;
 
-// Счет
-const lat2 = 15 - 10;
-const lon2 = 25 - 20;
+// Вычисляем разницу между координатами
+const latDis = positionLat - addressLat;
+const longDis = positionLong - addressLong;
 
-// Результат
-console.log(lat2 + lon2);
+// Вычисляем квадраты разностей
+const latDisSquared = latDis * latDis;
+const longDisSquared = longDis * longDis;
+
+// Вычисляем квадрат гипотенузы (расстояния)
+const distanceSquared = latDisSquared + longDisSquared;
+
+// Вычисляем само расстояние
+const distance = Math.sqrt(distanceSquared);
+
+console.log(`Расстояние между точками: ${distance}`);
