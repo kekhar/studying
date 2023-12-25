@@ -1,0 +1,8 @@
+input {
+    width: 60px;
+}
+
+.inputNum,
+.inputOper {
+    margin-bottom: 20px;
+}
