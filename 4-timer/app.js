@@ -1,3 +1,5 @@
+'use strict';
+
 function updateCountdown() {
 
   const newYearDate = new Date(`January 1, 2025 00:00:00`).getTime();

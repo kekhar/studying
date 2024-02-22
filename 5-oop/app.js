@@ -1,3 +1,5 @@
+'use strict';
+
 function Character(race, name, language) {
   this.race = race;
   this.name = name;
