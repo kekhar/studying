@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  margin: 50px;
+  background-color: black;
+}
+
+h1, #countdown {
+  color: white;
+}
+
+#countdown {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
