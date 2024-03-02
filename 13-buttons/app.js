@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", function () {
   const counterDiv = document.createElement("div");
   counterDiv.textContent = "0";

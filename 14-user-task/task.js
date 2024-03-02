@@ -1,3 +1,5 @@
+"use strict";
+
 export default class Task {
   constructor(message) {
     this.message = message;
