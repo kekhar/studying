@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -13,13 +13,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
+// Определяем enum для пола пользователя
+var Gender;
+(function (Gender) {
+    Gender["Male"] = "male";
+    Gender["Female"] = "female";
+})(Gender || (Gender = {}));
 // Функция для выполнения запроса к API
 function fetchUsers() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            // Выполняем GET запрос к API
             const response = yield axios_1.default.get('https://dummyjson.com/users');
-            // Возвращаем данные пользователей
             return response.data;
         }
         catch (error) {
@@ -29,10 +33,9 @@ function fetchUsers() {
                 console.error('Ошибка при выполнении запроса:', error.message);
             }
             else {
-                // Выводим другие типы ошибок, если они естьn
+                // Выводим другие типы ошибок, если они есть
                 console.error('Неизвестная ошибка:', error);
             }
-            // Возвращаем пустой массив в случае ошибки
             return [];
         }
     });

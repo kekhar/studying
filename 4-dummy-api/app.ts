@@ -1,22 +1,24 @@
-'use strict';
-
 import axios, { AxiosResponse, AxiosError } from 'axios';
+
+// Определяем enum для пола пользователя
+enum Gender {
+    Male = 'male',
+    Female = 'female',
+}
 
 // Определяем интерфейс для данных пользователя
 interface User {
     id: number;
     name: string;
     email: string;
-    gender: 'male' | 'female';
+    gender: Gender;
 }
 
 // Функция для выполнения запроса к API
 async function fetchUsers(): Promise<User[]> {
     try {
-        // Выполняем GET запрос к API
         const response: AxiosResponse<User[]> = await axios.get('https://dummyjson.com/users');
 
-        // Возвращаем данные пользователей
         return response.data;
     } catch (error) {
         // Обрабатываем ошибку, если запрос завершился неудачно
@@ -24,11 +26,10 @@ async function fetchUsers(): Promise<User[]> {
             // Выводим сообщение об ошибке
             console.error('Ошибка при выполнении запроса:', error.message);
         } else {
-            // Выводим другие типы ошибок, если они естьn
+            // Выводим другие типы ошибок, если они есть
             console.error('Неизвестная ошибка:', error);
         }
         
-        // Возвращаем пустой массив в случае ошибки
         return [];
     }
 }
