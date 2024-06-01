@@ -1,23 +1,25 @@
-function swapKeysAndValues(obj: Record<string, number>): Record<number, string> {
-  const swappedObj: Record<number, string> = {};
+type InputObject = Record<string, number>;
+type OutputObject = Record<number, string>;
+
+
+function swapKeysAndValues(obj: InputObject): OutputObject {
+  const swappedObj: OutputObject = {};
 
   for (const key in obj) {
-      if (Object.prototype.hasOwnProperty.call(obj, key)) {
-          const value = obj[key];
-          if (typeof value === 'number') {
-              swappedObj[value] = key;
-          }
-      }
+    const value = obj[key];
+    if (typeof value === 'number') {
+      swappedObj[value] = key;
+    }
   }
 
   return swappedObj;
 }
 
 // Пример использования:
-const obj: Record<string, number> = {
+const obj: InputObject = {
   a: 1,
   b: 2
 };
 
 const res = swapKeysAndValues(obj);
-console.log(res);
+console.log(res); // { '1': 'a', '2': 'b' }
